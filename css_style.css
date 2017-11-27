@@ -3,7 +3,6 @@
 	 - It does not set module-specific settings, that is in css_modules.css
 */
 
-
 /* Body and Global Styles */
 html {
 	position:         relative;
@@ -21,8 +20,21 @@ html {
 	color:            #188F83;
 } a:hover {
 	color:            #444444;
+} h1 {
+	text-align:       center;
+	font-size:        1.5em;
+	font-weight:      bold;
+	padding-top:      1em;
+} h2 {
+	text-align:       left;
+	font-size:        1.25em;
+	font-weight:      bold;
+	padding-top:      .75em;
+} p {
+	text-align:       justify;
+	line-height:      1.25;
+	padding-top:      .5em;
 }
-	
 
 /* Header Style */
 header {
@@ -79,12 +91,13 @@ header {
 	
 }
 
-
+/* Main Styles */
 main {
 	margin:           1em;
 	
 }
 
+/* Footer Styles */
 footer {
 	font-size:        .75em;
 	
