@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<officers>
+<officer name="Robert Batzler">
+	<major graduation="2017">Computer Engineering</major>
+	<position category="exec" title="President">2015b</position>
+	<position category="exec" title="President">2016a</position>
+	<position category="exec" title="President">2016b</position>
+</officer>
+<officer name="Michelle Miller">
+	<major graduation="2017">Computer Engineering</major>
+	<position category="exec" title="Vice President">2015b</position>
+	<position category="exec" title="Vice President">2016a</position>
+	<position category="exec" title="Vice President">2016b</position>
+	<linkedin>https://www.linkedin.com/in/chellicmiller/</linkedin>
+	<website>http://michellemiller.online/</website>
+	<github>https://github.com/chellimiller/</github>
+</officer>
+<officer name="Nick Gauvin">
+	<major graduation="2017">Computer Engineering</major>
+	<position category="exec" title="Treasurer">2015b</position>
+	<position category="exec" title="Treasurer">2016a</position>
+	<position category="exec" title="Treasurer">2016b</position>
+</officer>
+<officer name="Guilherme Vaz">
+	<major graduation="2016">Foreign Exchange</major>
+	<position category="exec" title="Secretary">2015b</position>
+	<position category="exec" title="Secretary">2015a</position>
+</officer>
+<officer name="Emily Marzofka">
+	<major graduation="2018">Computer Engineering</major>
+	<position category="exec" title="Secretary">2016b</position>
+	<position category="exec" title="President">2017a</position>
+	<position category="exec" title="President">2017b</position>
+</officer>
+</officers>

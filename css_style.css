@@ -1,0 +1,109 @@
+/*  Colors Used:
+        Teal:        #188F83
+		Light Grey:  #CCCCCC
+		Dark Grey:   #444444
+		
+		White:       #FFFFFF
+		Black:       #000000
+
+*/
+
+
+/* Body and Global Styles */
+html {
+	position:         relative;
+	min-height:       100%;
+	width:            100%;
+	
+} body {
+	padding:          1em;
+	
+	font-family:      Helvetica, Arial, sans-serif;
+	text-align:       center;
+	font-size:        calc(12px + 1vh);
+	
+} a {
+	color:            #188F83;
+} a:hover {
+	color:            #444444;
+}
+	
+
+/* Header Style */
+header {
+	
+} #banner {
+	width:            100%;
+	
+} header nav {
+	padding-top:      .25em;
+	padding-bottom:   .25em;
+	
+	border-bottom:    .05em solid #CCCCCC;
+	
+	text-align:       left;
+	
+} header nav a {
+	display:          inline-block;
+	min-width:        4em;
+	padding:          .25em;
+	margin:           .1em;
+	
+	text-decoration:  none;
+	text-align:       center;
+	color:            #FFFFFF;
+	
+	background:       #188F83;
+	border-radius:   .25em;
+	
+} header nav a:hover {
+	color:            #FFFFFF;
+	
+	background:       #000000;
+	
+}
+
+main {
+	margin:           1em;
+	
+}
+
+footer {
+	font-size:        .75em;
+	
+} footer nav {
+	padding-top:      1em;
+	
+	border-top:      .05em solid #CCCCCC;
+	
+} footer nav a {
+	margin:           .1em;
+	
+	color:            #444444;
+	
+} footer nav a:hover {
+	color:            #000000;
+	
+}
+
+/* OrgSync Module Defaults */
+.pod {
+  display:          inline-block;
+  padding:          .75em;
+  width:            25em;
+  overflow:         hidden;
+  vertical-align:   top;
+  
+  text-align:       left;
+  
+}
+.pod-header-text {
+	padding-top:    .5em;
+	padding-bottom: .5em;
+	
+	font-weight:     bold;
+	font-size:       1.15em;
+	color:           #444444;
+	text-align:      left;
+	
+}

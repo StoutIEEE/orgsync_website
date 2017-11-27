@@ -1,0 +1,10 @@
+{"officers":[
+	{"name":"Robert", "surname":"Batzler", "major":"CEE", "positions":[
+		"Secretary":["2015b"],
+		"President":["2015b","2016a","2016b"]
+	]}
+	{"name":"Michelle", "surname":"Miller", "major":"CEE", "positions":[
+		"Treasurer":["2015b"],
+		"Vice President":["2015b","2016a","2016b"]
+	]}
+]}
