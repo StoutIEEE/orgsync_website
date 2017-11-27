@@ -1,5 +1,17 @@
 // JavaScript code belongs here
 
+// Close dropdown when we click somewhere else on screen
+window.onclick = function(e) {
+	if (!e.target.matches('.dropbtn')) {
+		var drop = document.getElementsByClassName("dropdown-content");
+		for (let i in drop) {
+			if (drop[i].classList.contains('show')) {
+				drop[i].classList.remove('show');
+			}
+		}
+	}
+}
+
 /* Customize Officer Module */
 function mod_officers() {
 	// Get an array of officers
@@ -39,6 +51,13 @@ function mod_officers() {
 	return cell.innerHTML;
 }
 
+/* Initiaize modules */
 function initialize() {
 	mod_officers();
+}
+
+/* Open dropdown menu */
+function dropdown(id) {
+    document.getElementById(id).classList.toggle("show");
+	
 }
