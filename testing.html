@@ -1,0 +1,1826 @@
+
+
+
+
+    <!doctype html>
+<head>
+  <meta charset="utf-8">
+
+  <title>IEEE at the University of Wisconsin - Stout</title>
+  <meta name="description" content="Stout IEEE">
+  <meta name="author" content="Stout IEEE">
+
+  
+  <link rel="stylesheet" href="css_reset.css">
+  <link rel="stylesheet" href="css_style.css">
+  <link rel="stylesheet" href="css_modules.css">
+
+  <script type="text/javascript" src="js_code.js"></script>
+
+<!-- Do not edit beyond this point! -->
+</head>
+
+<body onload="initialize()">
+<!-- HTML goes here, do not edit above this point -->
+
+<header>
+  <img id="banner" src="http://os_extranet_images.s3.amazonaws.com/416586_original.png" />
+  <nav>
+    <a href="http://studentorgs.uwstout.edu/org/stoutieee/home">Home</a>
+    <a href="http://studentorgs.uwstout.edu/org/stoutieee/about">About</a>
+    <a href="http://studentorgs.uwstout.edu/org/stoutieee/up_events">Events</a>
+    <a href="http://studentorgs.uwstout.edu/org/stoutieee/members">Members</a>
+    <a href="http://studentorgs.uwstout.edu/org/stoutieee/Videos">Videos</a>
+    <a href="http://studentorgs.uwstout.edu/org/stoutieee/gallery">Gallery</a>
+    <a href="http://studentorgs.uwstout.edu/org/stoutieee/forms">Forms</a>
+    <a href="http://studentorgs.uwstout.edu/org/stoutieee/contact">Contact Us!</a>
+  </nav>
+</header>
+
+<!-- Do not edit beyond this point -->
+
+<main>
+<div id="os_content"><p>
+<div class="module" id="module_calendar"><div id="calendar_controls" class="clearfix">
+  
+  
+
+    <a class="button left" href="#" onclick="jQuery.ajax({beforeSend:function(request){$j('#calendar_switch_loader').show();}, complete:function(request){$j('#calendar_switch_loader').hide()}, data:'', dataType:'script', type:'post', url:'/calendar/prev_month?month_offset=-1&amp;org=stoutieee'}); return false;">Prev</a>
+		<h4>November 2017</h4>
+		<form action="/calendar/change_category?org=stoutieee" id="calendar_category" method="post" onsubmit="jQuery.ajax({beforeSend:function(request){$j('#calendar_filter_loader').show(); $j('.submit').hide();}, complete:function(request){$j('#calendar_filter_loader').hide(); $j('.submit').show()}, data:jQuery.param(jQuery(this).serializeArray()), dataType:'script', type:'post', url:'/calendar/change_category?org=stoutieee'}); return false;">
+		    <label class="select_label" for="calendar_event_category_id" id="calendar_event_category_id_label">Category: </label><select class="input_select" id="calendar_event_category_id" name="calendar[event_category_id]"><option value="">All</option>
+<option value="71339">General</option>
+<option value="481575">Open Board Meeting</option>
+<option value="245468">Speaker</option>
+<option value="245469">Study Night</option>
+<option value="163478">Workshop</option></select>
+		    <input class="submit" name="commit" type="submit" value="Filter" />
+		    <div class="loader" id="calendar_filter_loader" style="display:none"><img alt="Spinner" src="/images/spinner.gif?1485915548" />&nbsp;&nbsp;<span>Filtering Events</span></div>
+		  </form>
+   <a class="button right" href="#" onclick="jQuery.ajax({beforeSend:function(request){$j('#calendar_switch_loader').show();}, complete:function(request){$j('#calendar_switch_loader').hide()}, data:'', dataType:'script', type:'post', url:'/calendar/next_month?month_offset=1&amp;org=stoutieee'}); return false;">Next</a>
+  <div class="loader" id="calendar_switch_loader" style="display:none"><img alt="Spinner" src="/images/spinner.gif?1485915548" />&nbsp;&nbsp;<span>Changing Months</span></div>
+
+</div>
+
+<div id="the_calendars">
+	<div id="inner_cal">
+  <table id="cal_table" width="100%">
+  	<tr class="cal_days_title">
+  		<th>Sun</th>
+  		<th>Mon</th>
+  		<th>Tues</th>
+  		<th>Weds</th>
+  		<th>Thurs</th>
+  		<th>Fri</th>
+  		<th>Sat</th>
+  	</tr>
+    <tr>
+    
+    
+			
+      <td class='cal_not_month'><span class="cal_weekday">29</span></td>
+      
+    
+			
+      <td class='cal_not_month'><span class="cal_weekday">30</span></td>
+      
+    
+			
+      <td class='cal_not_month'><span class="cal_weekday">31</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">1</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">2</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">3</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">4</span></td>
+      </tr><tr>
+    
+			
+      <td><span class="cal_weekday">5</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">6</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">7</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">8</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">9</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">10</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">11</span></td>
+      </tr><tr>
+    
+			
+      <td><span class="cal_weekday">12</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">13</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">14</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">15</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">16</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">17</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">18</span></td>
+      </tr><tr>
+    
+			
+      <td><span class="cal_weekday">19</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">20</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">21</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">22</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">23</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">24</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">25</span></td>
+      </tr><tr>
+    
+			
+      <td><span class="cal_weekday">26</span></td>
+      
+    
+			
+      <td class='cal_today'><span class="cal_weekday">27</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">28</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">29</span></td>
+      
+    
+			
+      <td><span class="cal_weekday">30</span></td>
+      
+    
+			
+      <td class='cal_not_month'><span class="cal_weekday">1</span></td>
+      
+    
+			
+      <td class='cal_not_month'><span class="cal_weekday">2</span></td>
+      
+    
+    </tr>
+  </table>
+</div>
+</div>
+
+
+
+<div id="share_calendar">
+  <a href="https://orgsync.com/29702/calendar">See Full Calendar</a>
+</div>
+</div></p>
+
+<p><div class="module" id="module_contact_books">
+
+
+
+  There are no contact books to display at this time.
+
+</div></p>
+
+<p><div class="module" id="module_contact"><div id="contact_module_content">
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+<form action="/extranet/send_message?org=stoutieee" method="post" update="module_contact">
+  <input id="org" name="org" type="hidden" value="stoutieee" />
+  <input id="a_comment_body" name="a_comment_body" type="hidden" />
+
+  
+<div class="pod" id="">
+
+  <table width=100% cellspacing=0 cellpadding=0 class="pod-header" >
+      <tr>
+          <td class="pod-header-left"><div class="pod-icon-org_contact"></div></td>
+          <td class="pod-header-middle"><div class="pod-header-text">Contact Institute of Electrical and Electronics Engineers&nbsp;</div></td>
+          <td class="pod-header-right">
+            
+          </td>
+      </tr>
+  </table>
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+    
+
+    <label>Your Name</label><br>
+    <input id="name" name="name" placeholder="Anonymous" type="text" /><br><br>
+
+    <label>Your Email *</label><br>
+    <input id="email" name="email" placeholder="someone@example.com" type="email" /><br><br>
+
+    <label>Message Subject</label><br>
+    <input id="subject" name="subject" type="text" /><br><br>
+
+    <label>Your Message *</label><br>
+    <textarea class="size-large" id="message" name="message" rows="8"></textarea><br><br>
+
+    <div class="g-recaptcha" data-sitekey="6LcYDBMUAAAAAB25upfHnrmC67lhC8T8kowZmrgD"></div><br><br>
+
+    <input name="commit" type="submit" value="Send" />
+  </td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left-short"></td>
+        <td class="pod-footer-short"></td>
+        <td class="pod-footer-right-short"></td>    
+    </tr>
+    
+</table>
+</div>
+</form>
+
+
+</div></div></p>
+
+<p><div class="module" id="module_events">
+
+	<script src="/javascripts/popup.js?1485915548" type="text/javascript"></script>
+<div id="event_popup_box_wrapper" style="display:none;">
+	<div id="event_popup_box" class="profile_box" >
+	</div>
+</div>
+
+
+
+<div class="pod" id="">
+
+  <table width=100% cellspacing=0 cellpadding=0 class="pod-header" >
+      <tr>
+          <td class="pod-header-left"><div class="pod-icon-events"></div></td>
+          <td class="pod-header-middle"><div class="pod-header-text">Upcoming Events&nbsp;</div></td>
+          <td class="pod-header-right">
+            
+          </td>
+      </tr>
+  </table>
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+
+  <h5>There are no upcoming events at this time.</h5>
+
+
+</td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left-short"></td>
+        <td class="pod-footer-short"></td>
+        <td class="pod-footer-right-short"></td>    
+    </tr>
+    
+</table>
+</div>
+  <br/>
+<script type="text/javascript" charset="utf-8">
+  $j(".pagination a").click(function() {
+    $j("#pagination_loader").show()
+    $j.ajax({
+			url: this.href,
+			type: "GET",
+			dataType: "script",
+			loaded: function() {
+			  $j("#pagination_loader").hide()
+			}
+		});
+		
+    return false
+  })
+</script>
+
+</div></p>
+
+<p><div class="module" id="module_files">
+
+
+
+
+  
+    
+      
+      
+<div class="pod" id="">
+
+  <table width=100% cellspacing=0 cellpadding=0 class="pod-header" >
+      <tr>
+          <td class="pod-header-left"><div class="pod-icon-files"></div></td>
+          <td class="pod-header-middle"><div class="pod-header-text">IEEE Workshops and Presentations (6)&nbsp;</div></td>
+          <td class="pod-header-right">
+            
+          </td>
+      </tr>
+  </table>
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+          <b>Created by: Institute of Electrical and Electronics Engineers</b>
+      </td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left"></td>
+        <td class="pod-footer"><a href="#" onclick="jQuery.ajax({data:'', success:function(request){jQuery('#module_files').html(request);}, type:'post', url:'/org/stoutieee/files/list/1133486'}); return false;"><div onmouseover="this.className='button-hover';" onmouseout="this.className='button';"  class="button"><div class="button-text" >Files</div><div class="button-icon-blue"></div></div></a>&nbsp;</td>
+        <td class="pod-footer-right"></td>    
+    </tr>
+    
+</table>
+</div>
+    
+  
+
+  <table width="100%" class="gridded-table">
+  <tr>
+    <th align="left" colspan="3">File</td>
+  </tr>
+  
+</table>
+
+
+</div></p>
+
+<p><div class="module" id="module_forms"><!-- Forms Main Page -->
+
+
+
+  
+
+  <div id="list_category_182844">
+    
+<div class="pod" id="">
+
+  <table width=100% cellspacing=0 cellpadding=0 class="pod-header" >
+      <tr>
+          <td class="pod-header-left"><div class="pod-icon-"></div></td>
+          <td class="pod-header-middle"><div class="pod-header-text">IEEE Applications&nbsp;</div></td>
+          <td class="pod-header-right">
+            
+          </td>
+      </tr>
+  </table>
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+      
+        <div class="form_list_view even-row" id="form_description_231488">
+          <div class="form_head">
+	
+    <div class="form_title">
+      <span class="form_name">IEEE Board Member Application</span>
+    </div>
+    <span class="form_new_submission">
+      <a href="#" onclick="$j(this).parents('.form_head').next().toggle(); return false;">Description</a><a href="https://orgsync.com/29702/forms/231488" class="icon_window" target="_blank">Fill Out</a>
+    </span>
+    <br class="clearboth" />
+</div>
+<div id="expanded_form_info_231488" class="form_info" style="display:none;">
+	
+      <div class="form_info_data">
+        <div class="description"><p>Thank you for your interest in becoming a board member for Stout IEEE!</p>
+
+<p>As board member, you will be expected to attend weekly board meetings as well as IEEE workshops and events. All majors and levels of experience are welcome to apply. If you are motivated, eager to learn, and want to help other students grow academically and professionally, IEEE is right for you!</p>
+
+<p>IEEE aims to develop students as engineers and professionals. We want to provide a hand-on environment to educate students on both technical and professional topics.</p>
+
+<p>ELIGIBILITY: Positions are available to all students currently enrolled at UW-Stout</p></div>
+      </div>
+    
+	<br class="clearboth" />
+</div>
+
+        </div>
+      
+    </td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left-short"></td>
+        <td class="pod-footer-short"></td>
+        <td class="pod-footer-right-short"></td>    
+    </tr>
+    
+</table>
+</div>
+  </div>
+
+
+
+  <div id="list_category_182845">
+    
+<div class="pod" id="">
+
+  <table width=100% cellspacing=0 cellpadding=0 class="pod-header" >
+      <tr>
+          <td class="pod-header-left"><div class="pod-icon-"></div></td>
+          <td class="pod-header-middle"><div class="pod-header-text">IEEE Forms&nbsp;</div></td>
+          <td class="pod-header-right">
+            
+          </td>
+      </tr>
+  </table>
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+      
+        <div class="form_list_view " id="form_description_32345">
+          <div class="form_head">
+	
+    <div class="form_title">
+      <span class="form_name">Event / Project Proposal</span>
+    </div>
+    <span class="form_new_submission">
+      <a href="#" onclick="$j(this).parents('.form_head').next().toggle(); return false;">Description</a><a href="https://orgsync.com/29702/forms/32345" class="icon_window" target="_blank">Fill Out</a>
+    </span>
+    <br class="clearboth" />
+</div>
+<div id="expanded_form_info_32345" class="form_info" style="display:none;">
+	
+      <div class="form_info_data">
+        <div class="description"><p>This form is open to all students who wish to propose an event or project to the Stout IEEE.&nbsp; Thank you for your submission!</p></div>
+      </div>
+    
+	<br class="clearboth" />
+</div>
+
+        </div>
+      
+    </td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left-short"></td>
+        <td class="pod-footer-short"></td>
+        <td class="pod-footer-right-short"></td>    
+    </tr>
+    
+</table>
+</div>
+  </div>
+
+
+
+</div></p>
+
+<p><div class="module" id="module_links">
+
+
+<div class="pod" id="">
+
+  <table width=100% cellspacing=0 cellpadding=0 class="pod-header" >
+      <tr>
+          <td class="pod-header-left"><div class="pod-icon-links"></div></td>
+          <td class="pod-header-middle"><div class="pod-header-text">Links&nbsp;</div></td>
+          <td class="pod-header-right">
+            
+          </td>
+      </tr>
+  </table>
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+  
+    <table width=100% class="gridded-table">
+      <tr>
+        <th align="left"><div class="curve-tl"></div>Name</th>
+        <th align="left"><div class="curve-tr"></div>Description</th>
+      </tr>
+      
+      <tr class="odd-row">
+        <td><a href="https://www.facebook.com/groups/1641126546169918/" target="_blank">Facebook Group: UW-Stout IEEE</a></td>
+        <td>This is us on facebook.</td>
+      </tr>
+      
+      <tr class="even-row">
+        <td><a href="http://studentorgs.uwstout.orgsync.com/org/stoutieee" target="_blank">UW-Stout IEEE Website</a></td>
+        <td>We're up and running... Check it out!</td>
+      </tr>
+      
+    </table>
+  
+</td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left-short"></td>
+        <td class="pod-footer-short"></td>
+        <td class="pod-footer-right-short"></td>    
+    </tr>
+    
+</table>
+</div>
+</div></p>
+
+<p><div class="module" id="module_links_list">
+
+
+<div class="pod" id="">
+
+  <table width=100% cellspacing=0 cellpadding=0 class="pod-header" >
+      <tr>
+          <td class="pod-header-left"><div class="pod-icon-links"></div></td>
+          <td class="pod-header-middle"><div class="pod-header-text">Quick Links&nbsp;</div></td>
+          <td class="pod-header-right">
+            
+          </td>
+      </tr>
+  </table>
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+  
+  <ul class="links_list">
+    
+      <li><a href="https://www.facebook.com/groups/1641126546169918/">Facebook Group: UW-Stout IEEE</a></li>
+    
+      <li><a href="http://studentorgs.uwstout.orgsync.com/org/stoutieee">UW-Stout IEEE Website</a></li>
+    
+  </ul>
+  
+</td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left-short"></td>
+        <td class="pod-footer-short"></td>
+        <td class="pod-footer-right-short"></td>    
+    </tr>
+    
+</table>
+</div>
+</div></p>
+
+<p><div class="module" id="module_login"><a href="https://orgsync.com/login/university-of-wisconsin-stout" target="_blank">Login</a></div></p>
+
+<p><div class="module" id="module_member_list"><ul>
+  
+    <li>Nosherwan Adil</li>
+  
+    <li>Waheed Ahmed</li>
+  
+    <li>Abdurrahman A Alfarras</li>
+  
+    <li>hamoud z alshammari</li>
+  
+    <li>Dakota A Armstrong</li>
+  
+    <li>Dylan S Ascencio</li>
+  
+    <li>iqra ashraf</li>
+  
+    <li>Daniel J Asmussen</li>
+  
+    <li>Aymen Aziz</li>
+  
+    <li>Sabrine Azouz</li>
+  
+    <li>Nickolas F Bachman</li>
+  
+    <li>Robert A Batzler</li>
+  
+    <li>Alexandra L Bauer</li>
+  
+    <li>Devon P Bauer</li>
+  
+    <li>Jacob P Becher</li>
+  
+    <li>Lucas J Bednar</li>
+  
+    <li>Benjamin J Belmont</li>
+  
+    <li>Kevin C Berg</li>
+  
+    <li>Barrett J Beskar</li>
+  
+    <li>Gunnar K Bialke</li>
+  
+    <li>Louis R Bischel</li>
+  
+    <li>Ryan Blahnik</li>
+  
+    <li>Brice W Blankenship</li>
+  
+    <li>Tyler J Bloedorn</li>
+  
+    <li>Sebastian D Bonisch</li>
+  
+    <li>Bryant M Borland</li>
+  
+    <li>Daniel R Bradford</li>
+  
+    <li>Hannah R Bragelman</li>
+  
+    <li>Jacob D Brunner</li>
+  
+    <li>Cody L Buller</li>
+  
+    <li>Cal D Bunge</li>
+  
+    <li>Jack D Calaway</li>
+  
+    <li>Kevin Chau</li>
+  
+    <li>Augustin A Chenault</li>
+  
+    <li>Kevin Christensen</li>
+  
+    <li>Latarius J Christian</li>
+  
+    <li>David J Christoffel</li>
+  
+    <li>Dylan J Christopherson</li>
+  
+    <li>Tristan J Ciszek</li>
+  
+    <li>Jake W Collins</li>
+  
+    <li>Nathan Danielson</li>
+  
+    <li>Nathaniel W Darling</li>
+  
+    <li>Brian J Dassow</li>
+  
+    <li>Christopher L Davis</li>
+  
+    <li>Haydn J Davis</li>
+  
+    <li>Megan M Dawald</li>
+  
+    <li>Guilherme O M De Oliveira Matos Vaz</li>
+  
+    <li>Michael L Deschler</li>
+  
+    <li>Brady C Destree</li>
+  
+    <li>Garrett M DeWeese</li>
+  
+    <li>Kyle D Domack</li>
+  
+    <li>Parker J Drace</li>
+  
+    <li>Curtis A Drohman</li>
+  
+    <li>Mitchell J Dulon</li>
+  
+    <li>Kevin Q Duong</li>
+  
+    <li>Tyler Dusek</li>
+  
+    <li>Daniel S Eklund</li>
+  
+    <li>Tyler D Eul</li>
+  
+    <li>Jon L Fehr</li>
+  
+    <li>Mark T Finta</li>
+  
+    <li>Michael T Fleming</li>
+  
+    <li>Elizabeth J Freymiller</li>
+  
+    <li>Liam J Gallagher</li>
+  
+    <li>Brian A Garcia</li>
+  
+    <li>Michael Garrity</li>
+  
+    <li>Nicholas A Gauvin</li>
+  
+    <li>Joshua Geenen</li>
+  
+    <li>Saksham Ghimire</li>
+  
+    <li>Carl S Grenquist</li>
+  
+    <li>Cory J Hahlbeck</li>
+  
+    <li>Leepor Hang</li>
+  
+    <li>Alex A Hanke</li>
+  
+    <li>Jeffrey D Hartz</li>
+  
+    <li>Jack M Hayes</li>
+  
+    <li>Jacob C Hearst</li>
+  
+    <li>Ross J Hebert</li>
+  
+    <li>Matthew P Heisler</li>
+  
+    <li>Tswjyeej J Her</li>
+  
+    <li>Dillon B Hertz</li>
+  
+    <li>Kevin Hicks</li>
+  
+    <li>Jack R Hildebrandt</li>
+  
+    <li>Jacob A Hillebrand</li>
+  
+    <li>Lindsay Hintz</li>
+  
+    <li>Ryan C Holleran</li>
+  
+    <li>Brett P Holman</li>
+  
+    <li>Richard Hoverman</li>
+  
+    <li>Noah M Hren</li>
+  
+    <li>Timothy A Jansen</li>
+  
+    <li>Peter M Jenkins</li>
+  
+    <li>Cory M Johnson</li>
+  
+    <li>Benjamin J Jonas</li>
+  
+    <li>Payton B Jones</li>
+  
+    <li>Devin D Jorde</li>
+  
+    <li>John J Kalafut</li>
+  
+    <li>Tyler Karcheski</li>
+  
+    <li>Ghassen Khouni</li>
+  
+    <li>Bryton R Kinney</li>
+  
+    <li>Emily A Kinsman</li>
+  
+    <li>Anthony G Knaak</li>
+  
+    <li>Mathew J Konichek</li>
+  
+    <li>Gunther A Krause</li>
+  
+    <li>Matthew J Kuehn</li>
+  
+    <li>Joseph Leahy</li>
+  
+    <li>Joshua L Lemke</li>
+  
+    <li>Matthew D Levine</li>
+  
+    <li>Mitchell M Licht</li>
+  
+    <li>Cheng C Liu</li>
+  
+    <li>Christian Loera</li>
+  
+    <li>Talen S Londre</li>
+  
+    <li>Alexander Lopez</li>
+  
+    <li>Grant W Luttinen</li>
+  
+    <li>Madhu Sudhan Maheshwari</li>
+  
+    <li>Alec D Maki</li>
+  
+    <li>Jacob M Malinowski</li>
+  
+    <li>Collin M Marrone</li>
+  
+    <li>Emily R Marzofka</li>
+  
+    <li>Alec J Matschiner</li>
+  
+    <li>Benjamin A Mattson</li>
+  
+    <li>Daniel C McCarten</li>
+  
+    <li>Billy J McClain</li>
+  
+    <li>Maximilien M McDermott</li>
+  
+    <li>Chetan I McKay</li>
+  
+    <li>Joseph J Meinholz</li>
+  
+    <li>Sirine Mejri</li>
+  
+    <li>Gavin R Miller</li>
+  
+    <li>Joshua D Miller</li>
+  
+    <li>Michelle C Miller</li>
+  
+    <li>Nicholas E Millmann</li>
+  
+    <li>Lane W Mills</li>
+  
+    <li>Luke C Moua</li>
+  
+    <li>Mitchell R Mueller</li>
+  
+    <li>John D Mulvihill</li>
+  
+    <li>Alexander P Murrey</li>
+  
+    <li>Robert M Nelson</li>
+  
+    <li>Jeffrey A Neuenschwander</li>
+  
+    <li>Brett R Neuman</li>
+  
+    <li>Anders Nielsen</li>
+  
+    <li>Rowan J Norman</li>
+  
+    <li>Tom M Ochwangi</li>
+  
+    <li>Brennen A Olson</li>
+  
+    <li>Michael D Olson</li>
+  
+    <li>Aaron C Overby</li>
+  
+    <li>Jose A Palacios</li>
+  
+    <li>Taylor R Parramoure</li>
+  
+    <li>Kevin R Pelzel</li>
+  
+    <li>Abby K Peterson</li>
+  
+    <li>Kyle V Peterson</li>
+  
+    <li>Matt J Petschel</li>
+  
+    <li>Joshua M Petty</li>
+  
+    <li>Logan L Pingel</li>
+  
+    <li>Michael R Piron</li>
+  
+    <li>Mitchell L Podhora</li>
+  
+    <li>Jackson Punguil Bravo</li>
+  
+    <li>Madiha Qureshi</li>
+  
+    <li>Kase A Radtke</li>
+  
+    <li>kiran rajput</li>
+  
+    <li>Ethan D Reed</li>
+  
+    <li>Samantha S Rezabek</li>
+  
+    <li>Alec W Robole</li>
+  
+    <li>Alex R Rodriguez</li>
+  
+    <li>Taylor J Roehr</li>
+  
+    <li>Brandon E Rolain</li>
+  
+    <li>Jared R Roll</li>
+  
+    <li>Alex M Rucinski</li>
+  
+    <li>Bryan Russart</li>
+  
+    <li>Ryan P Sanford</li>
+  
+    <li>Joshua H Schaefer</li>
+  
+    <li>Taylor B Schake</li>
+  
+    <li>Jesse Schallenberger</li>
+  
+    <li>Philip J Schmidt</li>
+  
+    <li>Brady A Schock</li>
+  
+    <li>Angela K Schreiner</li>
+  
+    <li>Ben J Schugel</li>
+  
+    <li>Aaron C Schuler</li>
+  
+    <li>Andrew W Schuster</li>
+  
+    <li>Curtis L Scott</li>
+  
+    <li>Al Nasar Ahmed Sehgal</li>
+  
+    <li>Emmanuel E Seyoum</li>
+  
+    <li>James R Shablow</li>
+  
+    <li>Amandeep Singh</li>
+  
+    <li>Ashish Singh</li>
+  
+    <li>Joseph G Sissac</li>
+  
+    <li>David P Skluzacek</li>
+  
+    <li>Phillip P Smith</li>
+  
+    <li>Taylor T Smith</li>
+  
+    <li>Elijah J Smithson</li>
+  
+    <li>Nathan J Solyntjes</li>
+  
+    <li>Garrett L Sorensen</li>
+  
+    <li>Christopher W Spieth</li>
+  
+    <li>Damien A Sprinkle</li>
+  
+    <li>Elliot E Sproul</li>
+  
+    <li>Dan T Stanley</li>
+  
+    <li>Kyle A Stoflet</li>
+  
+    <li>Dylan J Stokosa</li>
+  
+    <li>Shannon C Strutz</li>
+  
+    <li>Jason C Sweeney</li>
+  
+    <li>Meng Thao</li>
+  
+    <li>Zoua Thao</li>
+  
+    <li>Thomas N Theis</li>
+  
+    <li>Jake J Thomas</li>
+  
+    <li>Eric B Thompson</li>
+  
+    <li>Kyle R Tietz</li>
+  
+    <li>Erich W Timmons</li>
+  
+    <li>Caleb J Tracy</li>
+  
+    <li>Ahmet Turkmen</li>
+  
+    <li>Tracen E Vail</li>
+  
+    <li>Evan A Vander Hoeven</li>
+  
+    <li>David Vang</li>
+  
+    <li>Toua Vang</li>
+  
+    <li>Tanner W Vass</li>
+  
+    <li>Marc-Anthony Velasquez</li>
+  
+    <li>Garrett J Vogl</li>
+  
+    <li>Orson Vue</li>
+  
+    <li>Justin M Wachtendonk</li>
+  
+    <li>Thomas J Wanless</li>
+  
+    <li>Ty J Weiss</li>
+  
+    <li>Samuel A Welter</li>
+  
+    <li>Jeffrey D Werner</li>
+  
+    <li>Nicholas D Werner</li>
+  
+    <li>Scott J White</li>
+  
+    <li>Benjamin C Wichmann</li>
+  
+    <li>Rodney J Williams</li>
+  
+    <li>Elizabeth A Wolfe</li>
+  
+    <li>Steven R Woytasik</li>
+  
+    <li>Benjamin D Wyss</li>
+  
+    <li>Craig A Wyss</li>
+  
+    <li>Tong D Yang</li>
+  
+    <li>Lukas A Zane</li>
+  
+    <li>Ian C Ziemba</li>
+  
+    <li>Kevin R Zoromski</li>
+  
+</ul>
+</div></p>
+
+<p><div class="module" id="module_mini_calendar">
+<div class="mini_cal_nav">
+  
+
+<span class="prev_month">
+  &laquo;
+  <a href="#" onclick="jQuery.ajax({beforeSend:function(request){$j('#mini_calendar_switch_loader').show();}, complete:function(request){$j('#mini_calendar_switch_loader').hide()}, data:'', dataType:'script', type:'post', url:'/calendar/mini_prev_month?month_offset=-1&amp;org=stoutieee'}); return false;">October</a>
+</span>
+
+<span class="next_month">
+  <a href="#" onclick="jQuery.ajax({beforeSend:function(request){$j('#mini_calendar_switch_loader').show();}, complete:function(request){$j('#mini_calendar_switch_loader').hide()}, data:'', dataType:'script', type:'post', url:'/calendar/mini_next_month?month_offset=1&amp;org=stoutieee'}); return false;">December</a>
+  &raquo;
+</span>
+
+<div class="loader" id="mini_calendar_switch_loader" style="display:none"><img alt="Spinner" src="/images/spinner.gif?1485915548" />&nbsp;&nbsp;<span></span></div>
+
+</div>
+<div class="mini_cal">
+  
+
+
+  <table class="mini_calendar" id="mini_cal_month_11"><caption>November 2017</caption><thead><tr><th abbr="Sunday" class="day_name" scope="col" title="Sunday">Sun</th><th abbr="Monday" class="day_name" scope="col" title="Monday">Mon</th><th abbr="Tuesday" class="day_name" scope="col" title="Tuesday">Tue</th><th abbr="Wednesday" class="day_name" scope="col" title="Wednesday">Wed</th><th abbr="Thursday" class="day_name" scope="col" title="Thursday">Thu</th><th abbr="Friday" class="day_name" scope="col" title="Friday">Fri</th><th abbr="Saturday" class="day_name" scope="col" title="Saturday">Sat</th></tr></thead><tbody><tr><td class="empty">&nbsp;</td><td class="empty">&nbsp;</td><td class="empty">&nbsp;</td><td class="">1</td><td class="">2</td><td class="">3</td><td class="">4</td></tr><tr><td class="">5</td><td class="">6</td><td class="">7</td><td class="">8</td><td class="">9</td><td class="">10</td><td class="">11</td></tr><tr><td class="">12</td><td class="">13</td><td class="">14</td><td class="">15</td><td class="">16</td><td class="">17</td><td class="">18</td></tr><tr><td class="">19</td><td class="">20</td><td class="">21</td><td class="">22</td><td class="">23</td><td class="">24</td><td class="">25</td></tr><tr><td class="today">26</td><td class="">27</td><td class="">28</td><td class="">29</td><td class="">30</td><td class="empty">&nbsp;</td></tr></tbody></table>
+
+
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  jQuery(function($) {
+    
+    $(".mini_calendar .day_with_events").css("cursor", "pointer").click(function() {
+      $.ajax({
+        data: {
+          date: $(this).attr('data-date'),
+          org:  'stoutieee'
+        },
+        dataType:'script',
+        type:'post',
+        url:'/calendar/display_day_popup'
+      });
+    });
+  
+  });
+</script>
+</div></p>
+
+<p><div class="module" id="module_officers">
+    
+    
+    
+
+
+<div class="pod" id="">
+
+  <table width=100% cellspacing=0 cellpadding=0 class="pod-header" >
+      <tr>
+          <td class="pod-header-left"><div class="pod-icon-profile"></div></td>
+          <td class="pod-header-middle"><div class="pod-header-text">Emily R Marzofka  - President&nbsp;</div></td>
+          <td class="pod-header-right">
+            
+          </td>
+      </tr>
+  </table>
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+<table width=100%>
+    <tr>
+        <td align="center" width="35%" style="border-right:1px solid #ccc;" valign="top">
+          <img alt="2ec71aa2-7df3-479b-a8a6-4c4502a8e169" display_no_pic_message="false" id="4210607" src="https://cdn3.orgsync.com/images/os-profile-pics/2ec71aa2-7df3-479b-a8a6-4c4502a8e169.jpg?crop=0&amp;h=240&amp;w=160" />
+        </td>
+        <td valign="top">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="large" width="95%">About Emily</td>
+                </tr>
+                <tr>
+                    <td colspan=2 valign="top" style="border-top:1px solid #ccc;padding-top:3px;padding-left:2px;">
+                        Heyo!
+<br/>
+<br/>My name is Emily, and I’m in the Computer Engineering program at Stout. I’m in IEEE because I love to take things apart and see what’s inside, and my roommates keep yelling at me for taking the batteries out of the remotes.
+<br/>Programming and electrical engineering have been my thing since middle school, when I built my first hovercraft. High school got me into my first internship and FIRST Robotics (look it up, it’s sweet), and Stack Overflow has gotten me a degree.
+<br/>
+<br/>Excited to see what next, graduation is May 2018!
+<br/><br/><br/>
+                        
+                        
+                           
+                        
+                        
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left-short"></td>
+        <td class="pod-footer-short"></td>
+        <td class="pod-footer-right-short"></td>    
+    </tr>
+    
+</table>
+</div>
+
+    
+    
+    
+
+
+<div class="pod" id="">
+
+  <table width=100% cellspacing=0 cellpadding=0 class="pod-header" >
+      <tr>
+          <td class="pod-header-left"><div class="pod-icon-profile"></div></td>
+          <td class="pod-header-middle"><div class="pod-header-text">Brett P Holman  - Vice President&nbsp;</div></td>
+          <td class="pod-header-right">
+            
+          </td>
+      </tr>
+  </table>
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+<table width=100%>
+    <tr>
+        <td align="center" width="35%" style="border-right:1px solid #ccc;" valign="top">
+          <img alt="20f2d5dd-3dd2-434f-9b15-9b718dca3824" display_no_pic_message="false" id="6936442" src="https://cdn3.orgsync.com/images/os-profile-pics/20f2d5dd-3dd2-434f-9b15-9b718dca3824.jpg?crop=0&amp;h=240&amp;w=160" />
+        </td>
+        <td valign="top">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="large" width="95%">About Brett</td>
+                </tr>
+                <tr>
+                    <td colspan=2 valign="top" style="border-top:1px solid #ccc;padding-top:3px;padding-left:2px;">
+                        Olá!
+<br/>
+<br/>I split my time between breathing fire, building rocket ships in my secret laboratory, and chilling in hammocks by the river.  My favorite color is gray (I'm colorblind), and I love winter camping (subzero weather is soooo cool).
+<br/>
+<br/>Brett Holman
+<br/>
+<br/>https://github.com/holmanbph<br/><br/>
+                        
+                        
+                           
+                        
+                        
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left-short"></td>
+        <td class="pod-footer-short"></td>
+        <td class="pod-footer-right-short"></td>    
+    </tr>
+    
+</table>
+</div>
+
+    
+    
+    
+
+
+<div class="pod" id="">
+
+  <table width=100% cellspacing=0 cellpadding=0 class="pod-header" >
+      <tr>
+          <td class="pod-header-left"><div class="pod-icon-profile"></div></td>
+          <td class="pod-header-middle"><div class="pod-header-text">Dylan J Christopherson  - Secretary&nbsp;</div></td>
+          <td class="pod-header-right">
+            
+          </td>
+      </tr>
+  </table>
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+<table width=100%>
+    <tr>
+        <td align="center" width="35%" style="border-right:1px solid #ccc;" valign="top">
+          <img alt="27dd4b9d-bd56-4f06-ad83-bcb4216fa9e9" display_no_pic_message="false" id="8543877" src="https://cdn2.orgsync.com/images/os-profile-pics/27dd4b9d-bd56-4f06-ad83-bcb4216fa9e9.PNG?crop=0&amp;h=240&amp;w=160" />
+        </td>
+        <td valign="top">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="large" width="95%">About Dylan</td>
+                </tr>
+                <tr>
+                    <td colspan=2 valign="top" style="border-top:1px solid #ccc;padding-top:3px;padding-left:2px;">
+                        My name is Dylan Christopherson and I'm a Freshmen in Computer Engineering. Joining IEEE has been a tremendous benefit to me both professionally and academically. It's a great opportunity to learn new things both within my major and about other relevant technology. <br/><br/>
+                        
+                        
+                           
+                        
+                        
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left-short"></td>
+        <td class="pod-footer-short"></td>
+        <td class="pod-footer-right-short"></td>    
+    </tr>
+    
+</table>
+</div>
+
+    
+    
+    
+
+
+<div class="pod" id="">
+
+  <table width=100% cellspacing=0 cellpadding=0 class="pod-header" >
+      <tr>
+          <td class="pod-header-left"><div class="pod-icon-profile"></div></td>
+          <td class="pod-header-middle"><div class="pod-header-text">Christian Loera  - Treasurer&nbsp;</div></td>
+          <td class="pod-header-right">
+            
+          </td>
+      </tr>
+  </table>
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+<table width=100%>
+    <tr>
+        <td align="center" width="35%" style="border-right:1px solid #ccc;" valign="top">
+          <img alt="695f7ea5-8766-4e1f-a1ba-0adb7df84201" display_no_pic_message="false" id="4216038" src="https://cdn4.orgsync.com/images/os-profile-pics/695f7ea5-8766-4e1f-a1ba-0adb7df84201.jpg?crop=0&amp;h=240&amp;w=160" />
+        </td>
+        <td valign="top">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="large" width="95%">About Christian</td>
+                </tr>
+                <tr>
+                    <td colspan=2 valign="top" style="border-top:1px solid #ccc;padding-top:3px;padding-left:2px;">
+                        Salutations ya'll, I am a junior in Computer Engineering at University of Wisconsin-Stout. I like to think that this major is like sandwiches since everything I like goes on sandwiches and pretty much all I enjoy doing is in this major; programming, soldering, crying, problem solving, puzzles, etc. A quick tip for freshman in any type of engineering program, laminate your notes as soon as possible so when your tears fall on them they don't smear the page.<br/><br/>
+                        
+                        
+                           
+                        
+                        
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left-short"></td>
+        <td class="pod-footer-short"></td>
+        <td class="pod-footer-right-short"></td>    
+    </tr>
+    
+</table>
+</div>
+
+    
+    
+    
+
+
+<div class="pod" id="">
+
+  <table width=100% cellspacing=0 cellpadding=0 class="pod-header" >
+      <tr>
+          <td class="pod-header-left"><div class="pod-icon-profile"></div></td>
+          <td class="pod-header-middle"><div class="pod-header-text">Michelle C Miller  - Former Vice President&nbsp;</div></td>
+          <td class="pod-header-right">
+            
+          </td>
+      </tr>
+  </table>
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+<table width=100%>
+    <tr>
+        <td align="center" width="35%" style="border-right:1px solid #ccc;" valign="top">
+          <img alt="9ab6ae1b-855b-4737-91bc-460b66a03ee0" display_no_pic_message="false" id="1257126" src="https://cdn2.orgsync.com/images/os-profile-pics/9ab6ae1b-855b-4737-91bc-460b66a03ee0.jpg?crop=0&amp;h=240&amp;w=160" />
+        </td>
+        <td valign="top">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="large" width="95%">About Michelle</td>
+                </tr>
+                <tr>
+                    <td colspan=2 valign="top" style="border-top:1px solid #ccc;padding-top:3px;padding-left:2px;">
+                        I'm a senior in Computer Engineering at the University of Wisconsin - Stout.  My favorite part about being a engineering student at Stout is the personal projects and being involved with IEEE. My ideal career would have me dealing with a variety of programming languages and applications, because I love learning new things. In my spare time I crochet, cook, and watch SciFi/Fantasy TV shows<br/><br/>
+                        
+                        
+                           
+                        
+                        
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left-short"></td>
+        <td class="pod-footer-short"></td>
+        <td class="pod-footer-right-short"></td>    
+    </tr>
+    
+</table>
+</div>
+
+    
+    
+    
+
+
+<div class="pod" id="">
+
+  <table width=100% cellspacing=0 cellpadding=0 class="pod-header" >
+      <tr>
+          <td class="pod-header-left"><div class="pod-icon-profile"></div></td>
+          <td class="pod-header-middle"><div class="pod-header-text">Nathan J Solyntjes  - Scandinavian-American Studies&nbsp;</div></td>
+          <td class="pod-header-right">
+            
+          </td>
+      </tr>
+  </table>
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+<table width=100%>
+    <tr>
+        <td align="center" width="35%" style="border-right:1px solid #ccc;" valign="top">
+          <img alt="A09c55ef-b43b-48aa-bf47-95149012d6ee" display_no_pic_message="false" id="496297" src="https://cdn3.orgsync.com/images/os-profile-pics/a09c55ef-b43b-48aa-bf47-95149012d6ee.jpg?crop=0&amp;h=240&amp;w=160" />
+        </td>
+        <td valign="top">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="large" width="95%">About Nathan</td>
+                </tr>
+                <tr>
+                    <td colspan=2 valign="top" style="border-top:1px solid #ccc;padding-top:3px;padding-left:2px;">
+                        Hello, I'm a super senior in Computer Engineering, looking to finish up in December 2017.<br/><br/>
+                        
+                        
+                           
+                        
+                        
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left-short"></td>
+        <td class="pod-footer-short"></td>
+        <td class="pod-footer-right-short"></td>    
+    </tr>
+    
+</table>
+</div>
+
+    
+    
+    
+
+
+<div class="pod" id="">
+
+  <table width=100% cellspacing=0 cellpadding=0 class="pod-header" >
+      <tr>
+          <td class="pod-header-left"><div class="pod-icon-profile"></div></td>
+          <td class="pod-header-middle"><div class="pod-header-text">Cheng C Liu  - Faculty Advisor&nbsp;</div></td>
+          <td class="pod-header-right">
+            
+          </td>
+      </tr>
+  </table>
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+<table width=100%>
+    <tr>
+        <td align="center" width="35%" style="border-right:1px solid #ccc;" valign="top">
+          <img alt="Profile_blank" display_no_pic_message="false" id="441094" src="/images/profile_blank.gif?1485915548" />
+        </td>
+        <td valign="top">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="large" width="95%">About Cheng</td>
+                </tr>
+                <tr>
+                    <td colspan=2 valign="top" style="border-top:1px solid #ccc;padding-top:3px;padding-left:2px;">
+                        
+                        
+                        
+                           
+                        
+                        
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left-short"></td>
+        <td class="pod-footer-short"></td>
+        <td class="pod-footer-right-short"></td>    
+    </tr>
+    
+</table>
+</div>
+
+</div></p>
+
+<p><div class="module" id="module_pictures">
+
+
+<div id="photos_module">
+  <div id="photos_nav">
+  </div>
+
+  <div id="photo_albums">
+    
+      
+        <div class="photo_cover">
+          <a href="#" onclick="jQuery.ajax({data:'', success:function(request){jQuery('#photos_module').html(request);$j(&quot;.photo&quot;).fancybox();}, type:'post', url:'/org/stoutieee/pictures/show/100519'}); return false;"><img alt="Wvu9sn59n9rrfnv_210" src="https://d1q9wbuypc40mm.cloudfront.net/wvu9sn59n9rrfnv_210.jpg" /></a><br/>
+            <div class="album_name">
+              <a href="#" onclick="jQuery.ajax({data:'', success:function(request){jQuery('#photos_module').html(request);$j(&quot;.photo&quot;).fancybox();}, type:'post', url:'/org/stoutieee/pictures/show/100519'}); return false;">Fall2016 Workshop LED Cube - Part 2</a>
+              <span class="photo_extra">
+                  | 6 Photos
+              </span>
+            </div>
+        </div>
+      
+        <div class="photo_cover">
+          <a href="#" onclick="jQuery.ajax({data:'', success:function(request){jQuery('#photos_module').html(request);$j(&quot;.photo&quot;).fancybox();}, type:'post', url:'/org/stoutieee/pictures/show/100517'}); return false;"><img alt="Iy2mah4gdxona8v_210" src="https://d1q9wbuypc40mm.cloudfront.net/iy2mah4gdxona8v_210.jpg" /></a><br/>
+            <div class="album_name">
+              <a href="#" onclick="jQuery.ajax({data:'', success:function(request){jQuery('#photos_module').html(request);$j(&quot;.photo&quot;).fancybox();}, type:'post', url:'/org/stoutieee/pictures/show/100517'}); return false;">Fall2016 Welcome Meeting</a>
+              <span class="photo_extra">
+                  | 16 Photos
+              </span>
+            </div>
+        </div>
+      
+        <div class="photo_cover">
+          <a href="#" onclick="jQuery.ajax({data:'', success:function(request){jQuery('#photos_module').html(request);$j(&quot;.photo&quot;).fancybox();}, type:'post', url:'/org/stoutieee/pictures/show/11390'}); return false;"><img alt="26abjreo7xvtg8_210" src="https://d1q9wbuypc40mm.cloudfront.net/26abjreo7xvtg8_210.jpg" /></a><br/>
+            <div class="album_name">
+              <a href="#" onclick="jQuery.ajax({data:'', success:function(request){jQuery('#photos_module').html(request);$j(&quot;.photo&quot;).fancybox();}, type:'post', url:'/org/stoutieee/pictures/show/11390'}); return false;">IEEE Company Tour Event - 4/1/2011</a>
+              <span class="photo_extra">
+                  | 11 Photos
+              </span>
+            </div>
+        </div>
+      
+        <div class="photo_cover">
+          <a href="#" onclick="jQuery.ajax({data:'', success:function(request){jQuery('#photos_module').html(request);$j(&quot;.photo&quot;).fancybox();}, type:'post', url:'/org/stoutieee/pictures/show/11382'}); return false;"><img alt="Yyys1evyrj776c_210" src="https://d1q9wbuypc40mm.cloudfront.net/yyys1evyrj776c_210.jpg" /></a><br/>
+            <div class="album_name">
+              <a href="#" onclick="jQuery.ajax({data:'', success:function(request){jQuery('#photos_module').html(request);$j(&quot;.photo&quot;).fancybox();}, type:'post', url:'/org/stoutieee/pictures/show/11382'}); return false;">Lecture: Robert McDowell - 4/12/2011</a>
+              <span class="photo_extra">
+                  | 12 Photos
+              </span>
+            </div>
+        </div>
+      
+        <div class="photo_cover">
+          <a href="#" onclick="jQuery.ajax({data:'', success:function(request){jQuery('#photos_module').html(request);$j(&quot;.photo&quot;).fancybox();}, type:'post', url:'/org/stoutieee/pictures/show/11011'}); return false;"><img alt="Xlzc28322bnwbd_210" src="https://d1q9wbuypc40mm.cloudfront.net/xlzc28322bnwbd_210.jpg" /></a><br/>
+            <div class="album_name">
+              <a href="#" onclick="jQuery.ajax({data:'', success:function(request){jQuery('#photos_module').html(request);$j(&quot;.photo&quot;).fancybox();}, type:'post', url:'/org/stoutieee/pictures/show/11011'}); return false;">Digital Multimeter Workshop - 3/26/2011</a>
+              <span class="photo_extra">
+                  | 6 Photos
+              </span>
+            </div>
+        </div>
+      
+    
+  </div>
+</div>
+
+</div></p>
+
+<p><div class="module" id="module_polls">
+<div id="poll_message" class="flash_notice" style="display:none">
+  
+</div>
+
+  
+    <div id="poll_12439">
+<div class="pod" id="">
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+	<div class="event_details_title  polls_detail_title">
+		<h2 class="news">
+		  2012-2013 UW-Stout IEEE Officer Elections - PRESIDENT
+		  
+	    	<span class="poll_closed">Draft</span>
+		  
+		</h2>
+	</div>
+	<table class="event_details">
+		<tbody>
+	  	
+			
+			  <tr>
+			  	<td><strong>Description:</strong></td>
+			  	<td><p>
+	&nbsp;</p>
+</td>
+			  </tr>
+			
+		</tbody>
+	</table>
+</td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left-short"></td>
+        <td class="pod-footer-short"></td>
+        <td class="pod-footer-right-short"></td>    
+    </tr>
+    
+</table>
+</div>
+  
+
+  
+<div class="pod" id="">
+
+  <table width=100% cellspacing=0 cellpadding=0 class="pod-header" >
+      <tr>
+          <td class="pod-header-left">&nbsp;</td>
+          <td class="pod-header-middle"><div class="pod-header-text">Total Votes: 0&nbsp;</div></td>
+          <td class="pod-header-right">
+            
+          </td>
+      </tr>
+  </table>
+
+<table width=100% cellspacing=0 cellpadding=0 class="pod-body" >
+    <tr>
+        <td class="pod-body-left"></td>
+        <td class="pod-body">
+    <table class="gridded-table" width="100%">
+      
+    	  <tr class="even-row">
+    	  	<td width="20%">Nick Bachman</td>
+    	  	<td align="left">
+    	  	  <div class="poll_graph poll_leader" style="width:15%">
+    	  	    <h4>
+    	  	      0
+    	  	      <span class="smaller">(0%)</span>
+    	  	    </h4>
+    	  	  </div>
+    	  	</td>
+    	  </tr>	
+    	
+    	  <tr>
+    	  	<td width="20%">Ben Wolf</td>
+    	  	<td align="left">
+    	  	  <div class="poll_graph poll_leader" style="width:15%">
+    	  	    <h4>
+    	  	      0
+    	  	      <span class="smaller">(0%)</span>
+    	  	    </h4>
+    	  	  </div>
+    	  	</td>
+    	  </tr>	
+    	
+    	  <tr class="even-row">
+    	  	<td width="20%">Matt Konichek</td>
+    	  	<td align="left">
+    	  	  <div class="poll_graph poll_leader" style="width:15%">
+    	  	    <h4>
+    	  	      0
+    	  	      <span class="smaller">(0%)</span>
+    	  	    </h4>
+    	  	  </div>
+    	  	</td>
+    	  </tr>	
+    	
+    	  <tr>
+    	  	<td width="20%">Max Steuer</td>
+    	  	<td align="left">
+    	  	  <div class="poll_graph poll_leader" style="width:15%">
+    	  	    <h4>
+    	  	      0
+    	  	      <span class="smaller">(0%)</span>
+    	  	    </h4>
+    	  	  </div>
+    	  	</td>
+    	  </tr>	
+    	
+    </table>
+  </td>
+        <td class="pod-body-right"></td>
+    </tr>
+    
+    <tr>
+        <td class="pod-footer-left-short"></td>
+        <td class="pod-footer-short"></td>
+        <td class="pod-footer-right-short"></td>    
+    </tr>
+    
+</table>
+</div>
+
+
+
+<br class="clearboth" />
+
+
+</div>
+  
+  <h4 class="rss_feed"><a href="http://studentorgs.uwstout.edu/feed/polls?org=stoutieee">Polls Feed</a></h4>
+</div></p>
+
+<p><div class="module" id="module_news">
+
+
+  <h4>There are no recent news events.</h4>
+
+
+</div></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</div>
+
+<div id="event_popup_box_wrapper" style="display:none;">
+	<div id="event_popup_box" class="profile_box" >
+	</div>
+</div>
+<div id="day_popup_box_wrapper" style="display:none;">
+	<div id="day_popup_box" class="profile_box" >
+	</div>
+</div>
+
+</main>
+
+<!-- Beginning of HTML Footer Code --> 
+
+<footer>
+  <nav>
+    <a href="http://studentorgs.uwstout.edu/org/stoutieee/home">Home</a>
+    <a href="http://studentorgs.uwstout.edu/org/stoutieee/about">About</a>
+    <a href="http://studentorgs.uwstout.edu/org/stoutieee/Videos">Videos</a>
+    <a href="http://studentorgs.uwstout.edu/org/stoutieee/gallery">Gallery</a>
+    <a href="http://studentorgs.uwstout.edu/org/stoutieee/forms">Forms</a>
+    <a href="http://studentorgs.uwstout.edu/org/stoutieee/contact">Contact Us!</a>
+  </nav>
+</footer>
+
+<!-- Do not edit beyond this point -->
+
+ 
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-1975314-11");
+		pageTracker._setDomainName(".orgsync.com");
+		pageTracker._trackPageview();
+		} catch(err) {}</script>
+	 </body>
+</html>
+
+
+
+

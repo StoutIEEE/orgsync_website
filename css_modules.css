@@ -1,0 +1,82 @@
+/* CSS Code for Changing OrgSyn Modules */
+
+/* Defaults */
+.pod {
+  display:          inline-block;
+  padding:          .75em;
+  width:            25em;
+  overflow:         hidden;
+  vertical-align:   top;
+  
+  text-align:       left;
+  
+} .pod-header-text {
+	padding-top:    .5em;
+	padding-bottom: .5em;
+	
+	font-weight:     bold;
+	font-size:       1.15em;
+	color:           #444444;
+	text-align:      left;
+	
+}
+
+/* Calendar Module */
+#module_calendar {}
+
+/* Contact Books Module */
+#module_contact_books {}
+
+/* Contact Module */
+#module_contact {}
+
+/* Events Module */
+#module_events {}
+
+/* Files Module */
+#module_files {}
+
+/* Forms Module */
+#module_forms {}
+
+/* Links Module */
+#module_links {}
+
+/* Links List Module */
+#module_links_list {}
+
+/* Login Module */
+#module_login {}
+
+/* Member List Module */
+#module_member_list {}
+
+/* Mini Calendar Module */
+#module_mini_calendar {}
+
+/* Officer Module */
+ #module_officers .pod {
+	width:            25em;
+	/* This will change in the JavaScript code */
+	display:          none;
+} #module_officers .ieee_officer {
+	width:            100%;
+} #module_officers .ieee_officer h1 {
+	font-size:        1.25em;
+	font-weight:      bold;
+} #module_officers .ieee_officer img {
+	width:            150px;
+} #module_officers .ieee_officer .about {
+	vertical-align:   top;
+	text-align:       justify;
+	padding-left:      .75em;
+}
+
+/* Pictures Module */
+#module_pictures {}
+
+/* Polls Module */
+#module_polls {}
+
+/* News Module */
+#module_news {}

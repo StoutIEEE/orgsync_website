@@ -1,11 +1,14 @@
-/*  Colors Used:
+/*  General Styles:
+		This stylesheet sets the default settings for the page
+		It does not set module-specific settings, that is in css_modules.css
+		
+	Colors Used:
         Teal:        #188F83
 		Light Grey:  #CCCCCC
 		Dark Grey:   #444444
 		
 		White:       #FFFFFF
 		Black:       #000000
-
 */
 
 
@@ -83,27 +86,5 @@ footer {
 	
 } footer nav a:hover {
 	color:            #000000;
-	
-}
-
-/* OrgSync Module Defaults */
-.pod {
-  display:          inline-block;
-  padding:          .75em;
-  width:            25em;
-  overflow:         hidden;
-  vertical-align:   top;
-  
-  text-align:       left;
-  
-}
-.pod-header-text {
-	padding-top:    .5em;
-	padding-bottom: .5em;
-	
-	font-weight:     bold;
-	font-size:       1.15em;
-	color:           #444444;
-	text-align:      left;
 	
 }
