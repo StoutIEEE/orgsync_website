@@ -1,0 +1,54 @@
+.module {
+  padding: 2px;
+  background-color: white;
+}
+
+#module_calendar {
+}
+
+#module_contact_books {
+}
+
+#module_contact {
+}
+
+#module_events {
+}
+
+#module_files {
+}
+
+#module_forms {
+}
+
+#module_links {
+}
+
+#module_links_list {
+}
+
+#module_login {
+}
+
+#module_member_list {
+
+}
+
+#module_mini_calendar {
+}
+
+#module_news {
+}
+
+#module_officers, #module_officers table.pod-header div {
+  padding: 4px;
+}
+
+#module_pictures {
+   border: 1px dashed magenta;
+   column-count: 2;
+   padding: 8px;
+}
+
+#module_polls {
+}

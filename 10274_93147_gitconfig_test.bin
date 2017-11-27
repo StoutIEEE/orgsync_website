@@ -1,0 +1,27 @@
+[user]
+	name = njsoly
+	email = njsoly@polymuler.com
+[credential]
+	helper = store
+[core]
+	autocrlf = false
+	ignorecase = false
+	filemode = false
+	followrenames = true
+	trustctime = false
+	preloadIndex = true
+[diff]
+	followrenames = true
+[alias]
+	assumeunchanged = !git update-index --assume-unchanged $1
+	last = cat-file commit HEAD
+	new = !gitk --all --not ORIG_HEAD
+[apply]
+	ignoreWhitespace = change
+[branch]
+	autoSetupRebase = always
+	autoSetupMerge = always
+[pack]
+	threads = 8
+
+
