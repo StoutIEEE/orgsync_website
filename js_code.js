@@ -1,10 +1,6 @@
 // JavaScript code belongs here
 
-/* module_officers: Reformat Officer Modules
-	The way that OrgSync displays officers is dumb, so this changes it.
-	This slows the page down a little bit.
-	This could have been quicker if OrgSync didn't suck
-*/
+/* Customize Officer Module */
 function mod_officers() {
 	// Get an array of officers
 	var officers = document.getElementById("module_officers").getElementsByClassName("pod");
@@ -35,7 +31,6 @@ function mod_officers() {
 	return info;
 	
 } function mod_officers_parseInfo_about(pod) {
-	// OrgSync is a brat and makes retrieving about text frustrating
 	// This could be one line of code, but it would be a very long line
 	var podBody = pod.getElementsByClassName("pod-body")[0];
 	var table = podBody.getElementsByTagName("table")[0].getElementsByTagName("table")[0];
